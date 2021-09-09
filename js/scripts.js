@@ -66,7 +66,7 @@ const data =  [
   let acumulator = ``;
   data.forEach((Crypto) => {
     acumulator += `<div class="glowing-border">
-    <div class="card bg-dark" data-id="${Crypto.id}" style="width: 15rem; height: 25rem;">
+    <div class="card bg-dark optionHide" data-id="${Crypto.id}" style="width: 15rem; height: 25rem;">
         <img src="${Crypto.img}" class="card-img-top">
         <div class="card-body text-center pt-5">
             <p>${Crypto.name}</p><button type="button" class="btn btn-success" id="addToCart">Add to cart</button>
@@ -79,7 +79,7 @@ const data =  [
 
 
 
-  function mostrar(id) {
+function mostrar(id) {
     $(".card").hide();
     $(".card[data-id='"+id+"']").show();
 }
