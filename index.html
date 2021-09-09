@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container px-4">
+      <a class="navbar-brand" href="#page-top">Crypto converter</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Convert</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Buy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Bill</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Header-->
+  <header class="bg-primary bg-gradient text-white">
+    <div class="container px-4 text-center">
+      <h1 class="fw-bolder">Welcome to crypto converter!</h1>
+      <p class="lead">A functional site where you can see how much cryptos you can buy with your money.</p>
+      <a class="btn btn-lg btn-light" href="#about">Start buying!</a>
+    </div>
+  </header>
+  <!-- Convert section-->
+  <section id="about">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">Quantity of pesos to insert:
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="number" class="form-control" id="pesosInserted">
+            <button type="button" class="btn btn-">Send</button>
+          </div>
+          <div>
+            <form action="index.php" method="post">
+              Chosen crypto:
+              <select id="status" name="status" onChange="mostrar(this.value);" class="form-select">
+                <option value="1">Bitcoin</option>
+                <option value="2">Ethereum</option>
+                <option value="3">Cardano</option>
+                <option value="4">Binance Coin</option>
+              </select>
+            </form>
+
+
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Crypto section-->
+  <section class="bg-light" id="services">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">
+          <h2>Choose crypto:</h2>
+          <div id='cryptoFlexy'>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Total section-->
+  <section id="contact">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">
+          <h2>Total to pay:</h2>
+          <p id=convertedValue>xxxxxxxxxxxxx</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="py-5 bg-dark">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">Copyright &copy; Francisco Macadam 2021</p>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
