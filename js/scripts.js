@@ -94,13 +94,26 @@ if (savedName==null) {
   let reqName = prompt("Enter your name:");
   if(reqName){
     localStorage.setItem('reqName', reqName);
-    alert('Hello '+reqName+'!');
+    document.getElementById('startBuying').innerHTML = ('Hello '+reqName+'!');
   }else{
-    alert('I need your name!');
+    document.getElementById('startBuying').innerHTML = ('I need your name!');
   }
 }else{
-  alert('Hello '+savedName+'!');
+    document.getElementById('startBuying').innerHTML = ('Hello '+savedName+'!');
 }
+
+
+$('.fw-bolder').fadeOut(1000).fadeIn(5000).css('color', 'red');
+
+$(".titulo").css('color', 'red')
+            .slideUp(500)
+            .delay(1000)
+            .slideDown(500);
+
+
+
+
+
 
 
 
